@@ -122,8 +122,8 @@ h1 {
   border-radius: 12px;
 }
 .cow-icon {
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   vertical-align: middle;
 }
@@ -290,6 +290,10 @@ h1 {
 .animal.watch {
   background: #fff3d5;
   border-color: #edcb72;
+}
+.animal.normal:hover {
+  background: #3479e8;
+  color: #fff;
 }
 .animal.treatment {
   background: #fbe5e9;
