@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9E5D2"/>
+      <stop offset="1" stop-color="#F0D8AC"/>
+    </linearGradient>
+    <linearGradient id="field" x1="800" y1="560" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#718B54"/>
+      <stop offset="1" stop-color="#294C36"/>
+    </linearGradient>
+    <linearGradient id="cattle" x1="734" y1="400" x2="1350" y2="685" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B87543"/>
+      <stop offset=".58" stop-color="#8E4F32"/>
+      <stop offset="1" stop-color="#683C2D"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="1040" y1="466" x2="1140" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#587E70"/>
+      <stop offset="1" stop-color="#294F48"/>
+    </linearGradient>
+    <filter id="shadow" x="620" y="350" width="930" height="420" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v635H0z"/>
+  <circle cx="1300" cy="176" r="72" fill="#F6D88E" opacity=".82"/>
+  <path fill="#94A986" d="M0 446c153-67 264-105 418-72 139 30 242-74 388-61 151 14 261 88 389 46 145-47 269-22 405 30v277H0V446Z"/>
+  <path fill="#718B64" d="M0 521c171-73 314-88 473-36 138 46 249 20 386-24 172-55 287 38 414 24 99-12 218-64 327-35v259H0V521Z"/>
+  <path fill="#C5AE7D" d="M202 394h208v170H202z"/>
+  <path fill="#7B4937" d="m177 401 128-96 129 96H177Z"/>
+  <path fill="#593A31" d="M254 453h55v111h-55zM345 426h40v42h-40z"/>
+  <path fill="url(#field)" d="M0 596c255-57 398-11 604 17 197 26 358-45 554-13 146 24 295 27 442-14v314H0V596Z"/>
+  <path fill="#A2AA72" d="M0 714c198-26 359 23 528 44 227 28 407-43 615-19 179 21 314 22 457-6v167H0V714Z" opacity=".48"/>
+  <g transform="translate(300 150) scale(.7)">
+  <ellipse cx="1080" cy="702" rx="395" ry="38" fill="#172F24" opacity=".38" filter="url(#shadow)"/>
+  <path d="m774 610-13 168h68l37-164m314-6 28 170h66l-9-197" fill="#693F2E" stroke="#57382C" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M741 459c44-65 163-97 300-82 104 11 177 59 213 121l82 3c40 1 74 28 81 67l14 73c6 32-19 61-52 61h-82c-31 0-60-15-78-40l-44-59c-103 44-278 52-411 21-60-14-101-49-108-92-5-27 21-56 85-73Z" fill="url(#cattle)"/>
+  <path d="m757 473-89-47c-14-7-31 6-25 21 15 37 47 66 91 84" fill="#8C4B32"/>
+  <path d="m1354 496 50-42c18-15 42-9 49 12l18 57c10 31 1 65-24 87l-34 31-73-20 14-125Z" fill="#A9633D"/>
+  <path d="m1396 455 17-44c8-20 36-17 40 4l4 38m-98-7-14-43c-7-20-35-20-40 1l-9 45" stroke="#F0D9B3" stroke-width="13" stroke-linecap="round"/>
+  <path d="m1436 556 31 4m-19 33 31 2" stroke="#F1DFC6" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+  <circle cx="1439" cy="514" r="8" fill="#241F1A"/>
+  <path d="M826 460c32-36 73-49 123-48m-81 101c53-29 113-37 170-26m-114 80c52-15 117-15 168-4" stroke="#D39A64" stroke-width="9" stroke-linecap="round" opacity=".65"/>
+  <path d="M1272 681c32 17 54 19 75 13" stroke="#F0D9B3" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1056 465c-19 19-28 47-27 78l6 98c2 35 27 61 60 61h38c23 0 40-20 36-42l-16-94 32 41c13 17 38 18 53 3l14-15-80-104c-20-26-52-40-84-38l-32 2Z" fill="url(#shirt)"/>
+  <path d="m1071 677-9 91h56l21-92m28 0 6 91h56l-21-99" fill="#39433A"/>
+  <path d="m1063 759-12 17c-5 8 1 19 11 19h58l3-24h-60Zm88 0 2 24h59c10 0 15-12 8-20l-8-10-61 6Z" fill="#483A31"/>
+  <path d="m1065 520-56 65c-12 14-11 35 4 47 14 12 35 10 47-4l45-53" fill="#C98D62"/>
+  <circle cx="1085" cy="404" r="43" fill="#C98D62"/>
+  <path d="M1041 406c2-42 21-67 57-69 27-1 48 15 55 42l-15 12-10-18-27 13-27-7-33 27Z" fill="#4B392C"/>
+  <path d="M1023 392c24-44 66-65 109-55 30 7 50 28 58 54-49-12-114-12-167 1Z" fill="#D9BD7C"/>
+  <path d="M1036 389c42-19 112-24 163-5l-3 16c-50-14-111-10-157 7l-3-18Z" fill="#A88B52"/>
+  <path d="m1071 410 2 2m31-4 2 2" stroke="#3B3028" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1062 436c17 10 36 11 53 1" stroke="#8A503E" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M0 817c188-43 330 10 494 43m252-37c166-25 283 6 426 27m145-44c95-18 194-4 283 27" stroke="#B2BD81" stroke-width="7" stroke-linecap="round" opacity=".58"/>
+  <path d="M93 868c110-21 189-11 274 13m862-9c105-24 212-24 319 1" stroke="#C1C88A" stroke-width="5" stroke-linecap="round" opacity=".4"/>
+</svg>
