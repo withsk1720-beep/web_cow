@@ -3,735 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="한우 농장의 우방별 개체 현황 관리" />
-    <title>한우 개체관리 시스템</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="무학농장 한우의 우방별 개체 현황과 건강 기록, 출하 정보를 한눈에 관리합니다."
+    />
+    <meta name="theme-color" content="#183c2b" />
+    <title>무학농장 | 한우 개체관리</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="landing.css" />
   </head>
-
   <body>
     <header class="site-header">
-      <a class="brand" href="#">
-        <span class="brand-icon">牛</span>
-        <span class="brand-name">무학 농장</span>
-        <span class="brand-sys">한우 개체관리 시스템</span>
+      <a class="brand" href="landing.html" aria-label="무학농장 홈">
+        <span class="brand-mark" aria-hidden="true">牛</span>
+        <span class="brand-copy">
+          <strong>무학농장</strong>
+          <span>HANWOO FARM</span>
+        </span>
       </a>
       <nav class="main-nav" aria-label="주 메뉴">
-        <a class="nav-link active" href="#">
-          <span>⌂</span>
-          Home
-        </a>
-        <a class="nav-link" href="#">
-          <span>🐄</span>
-          개체 관리
-        </a>
-        <a class="nav-link" href="#">
-          <span>▥</span>
-          출하 관리
-        </a>
+        <a href="#about">농장 소개</a>
+        <a href="#features">관리 시스템</a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=withsk81%40gmail.com&amp;su=%EB%AC%B4%ED%95%99%EB%86%8D%EC%9E%A5%20%EB%AC%B8%EC%9D%98&amp;body=%EB%AC%B8%EC%9D%98%20%EB%82%B4%EC%9A%A9%EC%9D%84%20%EC%9E%91%EC%84%B1%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94."
+          target="_blank"
+          rel="noopener noreferrer"
+          >문의</a
+        >
       </nav>
-      <div class="header-tools">
-        <span class="today">2026년 11월 10일 (화)</span>
-        <a href="#">⚙ 설정</a>
-      </div>
+      <a class="header-link" href="index.html">
+        관리 시스템 바로가기 <span aria-hidden="true">↗</span>
+      </a>
     </header>
 
-    <main class="page">
-      <section class="page-title">
-        <p class="eyebrow">FARM DASHBOARD</p>
-        <h1>우방별 사육 현황</h1>
-        <p>우방별 개체번호를 확인하고 건강 상태를 한눈에 관리합니다.</p>
-      </section>
-      <section class="summary-cards">
-        <article class="summary-card total">
-          <img src="image/beef.png" class="cow-icon" alt="황소" />
-          <div>
-            <span class="summary-label">전체 사육 두수</span>
-            <strong
-              >104
-              <small>마리</small>
-            </strong>
+    <main>
+      <section class="hero" id="about" aria-label="무학농장 소개">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide hero-slide hero-slide--overview">
+              <img
+                class="slide-photo"
+                src="image/cow_inwoosa.jpg"
+                alt=""
+                fetchpriority="high"
+              />
+              <div class="slide-shade"></div>
+              <div class="hero-content">
+                <p class="eyebrow"><span></span> MUHAK HANWOO FARM</p>
+                <h1>정성을 기록하고,<br />건강한 한우를 키웁니다.</h1>
+                <p class="hero-description">
+                  무학농장의 한우 한 마리 한 마리를<br class="mobile-break" />
+                  더 세심하게 살피고 기록합니다.
+                </p>
+                <a class="primary-button" href="index.html">
+                  우리 농장 현황 보기 <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="slide-caption">농장 이야기</div>
+            </article>
+
+            <article class="swiper-slide hero-slide hero-slide--pens">
+              <img
+                class="slide-photo slide-photo--right"
+                src="image/cow_P2.jpg"
+                alt=""
+              />
+              <div class="slide-shade slide-shade--green"></div>
+              <div class="hero-content">
+                <p class="eyebrow"><span></span> CARE BY PEN</p>
+                <h2>우방별 현황을<br />한눈에 확인하세요.</h2>
+                <p class="hero-description">
+                  우방마다 달라지는 개체 현황을 정리해<br
+                    class="mobile-break"
+                  />
+                  필요한 정보를 빠르게 찾아볼 수 있습니다.
+                </p>
+                <a class="primary-button" href="index.html">
+                  우방별 현황 확인 <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="slide-caption">우방별 관리</div>
+            </article>
+
+            <article class="swiper-slide hero-slide hero-slide--records">
+              <img
+                class="slide-photo slide-photo--right"
+                src="image/cow_P3.jpg"
+                alt=""
+              />
+              <div class="slide-shade slide-shade--green"></div>
+              <div class="hero-content">
+                <p class="eyebrow"><span></span> EVERY ANIMAL, EVERY RECORD</p>
+                <h2>건강부터 출하까지,<br />꼼꼼한 개체 기록.</h2>
+                <p class="hero-description">
+                  개체별 상태와 주요 일정을 살펴보고<br class="mobile-break" />
+                  농장 운영에 필요한 기록을 관리합니다.
+                </p>
+                <a class="primary-button" href="index.html">
+                  개체 관리 시작하기 <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="slide-caption">개체별 기록</div>
+            </article>
           </div>
-        </article>
-        <article class="summary-card health">
-          <span class="summary-icon">♥</span>
-          <div>
-            <span class="summary-label">건강 이상 개체</span
-            ><strong>1 <small>마리</small></strong>
+
+          <div class="hero-controls" aria-label="슬라이드 제어">
+            <button
+              class="swiper-button-prev"
+              type="button"
+              aria-label="이전 슬라이드"
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+            <div class="swiper-pagination" aria-live="polite"></div>
+            <button
+              class="swiper-button-next"
+              type="button"
+              aria-label="다음 슬라이드"
+            >
+              <span aria-hidden="true">→</span>
+            </button>
           </div>
-        </article>
-        <article class="summary-card calving">
-          <span class="summary-icon">🐂</span>
-          <div>
-            <span class="summary-label">분만 예정</span
-            ><strong>2 <small>마리</small></strong>
-          </div>
-        </article>
-        <article class="summary-card shipping">
-          <span class="summary-icon">🚚</span>
-          <div>
-            <span class="summary-label">출하 예정</span
-            ><strong>3 <small>마리</small></strong>
-          </div>
-        </article>
-      </section>
-      <section class="legend">
-        <span><i class="dot normal-dot"></i>정상</span
-        ><span><i class="dot watch-dot"></i>관찰</span
-        ><span><i class="dot treatment-dot"></i>치료 중</span>
-      </section>
-      <section class="pens-section">
-        <div class="row-heading">
-          <h2>좌열 우방</h2>
-          <span>13 칸</span>
-        </div>
-        <div class="pen-grid">
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-1</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5067</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5068</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5070</strong><span class="age">22月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5071</strong><span class="age">21月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-2</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5063</strong><span class="age">25月</span>
-              </div>
-              <div class="animal watch">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5065</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5066</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5069</strong><span class="age">22月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-3</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5048</strong><span class="age">30月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5049</strong><span class="age">29月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5051</strong><span class="age">28月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5052</strong><span class="age">27月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-4</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5041</strong><span class="age">28月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5043</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5046</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5047</strong><span class="age">25月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-5</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5034</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5036</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5037</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5038</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-6</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal watch">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5024</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5025</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5026</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5027</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-7</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5022</strong><span class="age">32月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5023</strong><span class="age">31月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5028</strong><span class="age">30月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5029</strong><span class="age">29月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-8</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5012</strong><span class="age">33月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5013</strong><span class="age">31月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5014</strong><span class="age">31月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5015</strong><span class="age">30月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-9</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal watch">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5005</strong><span class="age">34月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5006</strong><span class="age">33月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5007</strong><span class="age">32月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5008</strong><span class="age">31月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-10</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5079</strong><span class="age">28月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5080</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5081</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5082</strong><span class="age">25月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-11</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4082</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4084</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4085</strong><span class="age">22月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4086</strong><span class="age">21月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-12</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4088</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4089</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4090</strong><span class="age">22月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4091</strong><span class="age">21月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen">
-            <div class="pen-head">
-              <h2>1-13</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal treatment">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4083</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4095</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>4097</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>4098</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="row-heading second">
-          <h2>우열 우방</h2>
-          <span>13칸</span>
-        </div>
-        <div class="pen-grid">
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-1</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5101</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5102</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5105</strong><span class="age">22月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5106</strong><span class="age">21月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-2</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal watch">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5107</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5109</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5110</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5111</strong><span class="age">22月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-3</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5113</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5115</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5116</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5117</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-4</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5119</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5121</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5122</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5123</strong><span class="age">24月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-5</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5125</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5127</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5128</strong><span class="age">22月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5129</strong><span class="age">21月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-6</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal watch">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5131</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5133</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5135</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5136</strong><span class="age">22月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-7</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5137</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5138</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5140</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5141</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-8</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5143</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5145</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5147</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5148</strong><span class="age">24月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-9</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal treatment">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5150</strong><span class="age">28月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5152</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5154</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5155</strong><span class="age">25月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-10</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5156</strong><span class="age">27月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5158</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5160</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5161</strong><span class="age">24月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-11</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5162</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5164</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5165</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5166</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-12</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5167</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5169</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5170</strong><span class="age">23月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5171</strong><span class="age">22月</span>
-              </div>
-            </div>
-          </section>
-          <section class="pen2">
-            <div class="pen-head">
-              <h2>2-13</h2>
-              <span class="pen-count">4</span>
-            </div>
-            <div class="animal-list">
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5172</strong><span class="age">26月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5174</strong><span class="age">25月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex female" aria-label="암소">♀</span
-                ><strong>5175</strong><span class="age">24月</span>
-              </div>
-              <div class="animal normal">
-                <span class="sex male" aria-label="수소">♂</span
-                ><strong>5177</strong><span class="age">23月</span>
-              </div>
-            </div>
-          </section>
+          <span class="hero-index" aria-hidden="true">FARM MANAGEMENT</span>
         </div>
       </section>
-      <footer class="dashboard-footer">
-        <div class="health-summary">
-          <strong>전체 104마리 중</strong><b class="ok">정상 99마리</b
-          ><b class="watch-text">관찰 4마리</b
-          ><b class="treat-text">치료 중 1마리</b>
+
+      <section class="features section-wrap" id="features">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="eyebrow eyebrow--dark">FARM MANAGEMENT</p>
+          <h2>농장의 오늘을 더 쉽게 관리합니다.</h2>
+          <p>복잡한 농장 기록을 한곳에 모아 필요한 순간 바로 확인하세요.</p>
         </div>
-        <div class="footer-right">
-          <span>◷ 최종 갱신: 2026-11-10 15:30</span
-          ><button type="button">↻ 새로고침</button>
+        <div class="feature-grid">
+          <article class="feature-card" data-aos="fade-up">
+            <span class="feature-number">01</span>
+            <div class="feature-icon feature-icon--green" aria-hidden="true">
+              ⌂
+            </div>
+            <h3>우방별 사육 현황</h3>
+            <p>우방 위치와 개체 구성을 한눈에 확인하고 관리할 수 있습니다.</p>
+            <a href="index.html"
+              >현황 살펴보기 <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="feature-card" data-aos="fade-up" data-aos-delay="120">
+            <span class="feature-number">02</span>
+            <div class="feature-icon feature-icon--yellow" aria-hidden="true">
+              ♡
+            </div>
+            <h3>개체별 건강 기록</h3>
+            <p>
+              개체 상태를 확인하고 관찰이나 치료가 필요한 정보를 기록합니다.
+            </p>
+            <a href="index.html"
+              >개체 관리하기 <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="feature-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="feature-number">03</span>
+            <div class="feature-icon feature-icon--blue" aria-hidden="true">
+              ▤
+            </div>
+            <h3>주요 일정과 출하</h3>
+            <p>분만과 출하 등 놓치기 쉬운 일정을 모아 편리하게 살펴봅니다.</p>
+            <a href="index.html"
+              >관리 시스템 보기 <span aria-hidden="true">↗</span></a
+            >
+          </article>
         </div>
-      </footer>
-      <p class="sample-note">
-        ※ 개체번호, 월령 및 요약 수치는 화면 디자인 확인용 예시 데이터입니다.
-        실제 농장 자료로 교체해야 합니다.
-      </p>
+      </section>
+
+      <section class="dashboard-cta">
+        <div class="dashboard-cta-inner" data-aos="fade-up">
+          <div>
+            <p class="eyebrow">MUHAK FARM DASHBOARD</p>
+            <h2>우리 농장의 현황을 확인해 보세요.</h2>
+          </div>
+          <a class="secondary-button" href="index.html">
+            대시보드 바로가기 <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <a
+        class="brand brand--footer"
+        href="landing.html"
+        aria-label="무학농장 홈"
+      >
+        <span class="brand-mark" aria-hidden="true">牛</span>
+        <span class="brand-copy">
+          <strong>무학농장</strong>
+          <span>HANWOO FARM</span>
+        </span>
+      </a>
+      <p>정성으로 키우고, 기록으로 돌보는 무학농장</p>
+      <small>© 무학농장. All rights reserved.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 650,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80,
+        disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+      });
+
+      new Swiper(".hero-swiper", {
+        loop: true,
+        speed: 650,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+      });
+    </script>
   </body>
 </html>
